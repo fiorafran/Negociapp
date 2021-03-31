@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Negociapp",
+  "short_name": "Negociapp",
+  "version": "io.framework7.negociapp",
+  "description": "Búsqueda de negocios cercanos",
+  "author": "Fiora Team",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#2196f3"
+}

@@ -1,0 +1,120 @@
+<div class="page" data-name="search">
+    <div class="toolbar tabbar-labels toolbar-bottom">
+            <div class="toolbar-inner">
+                <a href="#tab-2" class="tab-link" id="btn2">
+                    <span class="icon material-icons" id="iStore">storefront</span>
+                    <span class="tabbar-label small-text">Registrar</span>
+                    <span class="tabbar-label small-text">negocio</span>
+                </a>
+                <a href="#tab-1" class="tab-link tab-link-active" id="btn1">
+                    <span class="icon material-icons" id="iSearch">search</span>
+                    <span class="tabbar-label small-text">Buscar</span>
+                    <span class="tabbar-label small-text">negocios</span>
+                </a>
+                <a href="#tab-3" class="tab-link" id="btn3">
+                    <span class="icon material-icons" id="iSave">bookmark_border</span>
+                    <span class="tabbar-label small-text">Negocios</span>
+                    <span class="tabbar-label small-text">guardados</span>
+                </a>
+            </div>
+        </div>
+    <div class="navbar" id="nav">
+        <div class="navbar-bg" id="navBg"></div>
+        <div class="navbar-inner sliding" id="navBr">
+        <div class="left">
+            <a href="#" class="button color-gray panel-open" id="menuOpen">
+            <i class="icon material-icons color-black">menu</i>
+            </a>
+        </div>
+        <div class="title" id="titleBar">Buscar negocios</div>
+        </div>
+    </div>
+    <div class="tabs">
+        <div class="page-content tab tab-active" id="tab-1">
+            <div class="block" id="divMap">
+            <div style="width: 100%; height: 88.4vh; border:0px;" id="mapContainer"></div>
+            </div>
+        </div>
+
+        <div class="page-content tab" id="tab-2">
+            <div class="block">
+                <div class="text-align-center">
+                    <img src="img/store_icon.svg" alt="store icon" id="svgImg">
+                </div>
+                <div class="list no-hairlines-md">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Nombre del local</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Nombre" id="nameLocal"/>
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Dirección del local</div>
+                                <div class="item-input-wrap">
+                                    <input type="text" placeholder="Ej: Biedma 2501" id="dirLocal"/>
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Horario desde - hasta</div>
+                                <div class="item-input-wrap display-flex">
+                                    <input type="time" id="hDesde" />
+                                    <input type="time" id="hHasta" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Negocio (tipo)</div>
+                                <div class="item-input-wrap input-dropdown-wrap">
+                                <select placeholder="Por favor selecciona uno" id="tipoLocal">
+                                    <option value="Kiosco">Kiosco</option>
+                                    <option value="Almacen">Almacén</option>
+                                    <option value="Kiosco-Almacen">Kiosco-Almacén</option>
+                                </select>
+                              </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">Confirmá tu E-mail</div>
+                                <div class="item-input-wrap">
+                                    <input type="email" placeholder="Tu E-mail" id="emailLocal"/>
+                                    <span class="input-clear-button"></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="display-flex justify-content-center">
+                    <button class="button button-fill button-round color-green" id="regLocal">Registrar mi negocio</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content tab" id="tab-3">
+            <div class="block" id="cont-guardados">
+            </div>
+            <div class="fab fab-extended fab-center-bottom">
+                <a href="#">
+                  <i class="icon f7-icons if-not-md">plus</i>
+                  <i class="icon material-icons md-only">add</i>
+                  <div class="fab-text popover-open" data-popover=".pop-comer">Agregar</div>
+                </a>
+              </div>
+        </div>
+        <div class="popover pop-comer">
+            <div class="popover-inner">
+                <div class="block" id="cargaLocales">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
